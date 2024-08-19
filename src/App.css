@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#main{
+  background-color: #34495e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 93.5vh;  
+    color: #f1f1f1;
+}
+
+#container{
+  background-color: #2c3e50;
+  border-radius: 10px;
+}
+
+#output-main{
+  position: relative;
+  top: 200px;
+  background-color: #2c3e50;
+  min-height: 50px;
+  border-radius: 10px;
+  width: 18.5rem;
+}
+
+#output{
+  text-align: center;
+  margin-top: 5%;
+}
