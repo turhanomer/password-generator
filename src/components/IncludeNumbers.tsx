@@ -13,16 +13,16 @@ export default function IncludeNumbers({
   }
 
   return (
-    <div className="mb-2">
+    <div className="mb-3">
       <input
         type="checkbox"
+        className="btn-check"
         id="includeNumbers"
         checked={includeNumbers}
-        className="mr-2"
         onChange={handleIncludeNumberChange}
       />
       
-      <label htmlFor="includeNumbers">Include Number</label>
+      <label className="btn btn-outline-primary" htmlFor="includeNumbers">Include Number</label>
     </div>
   );  
 }

@@ -13,15 +13,15 @@ export default function IncludeSymbols({
   }
 
   return (
-    <div className="mb-2">
+    <div className="mb-3">
       <input
+      className="btn-check"
         type="checkbox"
         id="includeSymbol"
         checked={includeSymbols}
-        className="mr-2"
         onChange={handleIncludeSymbolChange}
       />
-      <label htmlFor="includeSymbol">Include Symbol</label>
+      <label className="btn btn-outline-primary" htmlFor="includeSymbol">Include Symbol</label>
     </div>
   );
 }

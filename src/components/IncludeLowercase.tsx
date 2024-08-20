@@ -11,15 +11,15 @@ export default function IncludeLowercase({
     setIncludeLowercase(!includeLowercase);
   }
   return (
-    <div className="mb-2">
+    <div className="mb-3">
       <input
         type="checkbox"
+        className="btn-check"
         id="includeLowercase"
         checked={includeLowercase}
-        className="mr-2"
         onChange={handleIncludeLowercaseChange}
       />
-      <label htmlFor="includeLowercase">Include Lowercase Letters</label>
+      <label className="btn btn-outline-primary" htmlFor="includeLowercase">Include Lowercase Letters</label>
     </div>
   );
 }

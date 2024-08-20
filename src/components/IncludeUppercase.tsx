@@ -7,22 +7,24 @@ type IncludeUppercaseProps = {
 
 export default function IncludeUppercase({
   includeUppercase,
-  setIncludeUppercase
+  setIncludeUppercase,
 }: IncludeUppercaseProps) {
   function handleIncludeUppercaseChange(e: ChangeEvent<HTMLInputElement>) {
-    setIncludeUppercase(!includeUppercase);    
+    setIncludeUppercase(!includeUppercase);
   }
 
   return (
-    <div className="mb-2">
+    <div className="mb-3">
       <input
+        className="btn-check"
         type="checkbox"
         id="includeUppercase"
         checked={includeUppercase}
-        className="mr-2"
         onChange={handleIncludeUppercaseChange}
       />
-      <label htmlFor="includeUppercase">Include Uppercase Letters</label>
+      <label className="btn btn-outline-primary" htmlFor="includeUppercase">
+        Include Uppercase Letters
+      </label>
     </div>
   );
 }

@@ -16,17 +16,16 @@ export default function PasswordLength({
 
   return (
     <>
-      <div className="mb-2">
+      <div className="mb-3">
         <label className="flex items-center justify-between font-medium">
           <div>Password Length</div>
-          <div className="text-2xl">{passwordLength}</div>
+          <div>{passwordLength}</div>
         </label>
         <input
           type="range"
           id="passwordLength"
           min="4"
           max="20"
-          className="w-full appearance-none h-1"
           onChange={handlePasswordLengthChange}
           value={passwordLength}
         />
